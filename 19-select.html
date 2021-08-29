@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Select</title>
+	</head>
+	<body>
+		<!-- este es un select clasico pero no aplica buenas practicas -->
+		<!-- <select name="cursos" id="">
+        <option value="javascript">JavaScript</option>
+        <option value="html5">HTML5</option>
+        <option value="css3">CSS3</option>
+        <option value="web-standards">Web Standards</option>
+    </select> -->
+
+		<!-- Esta es la forma ideal de hacer una etiqueta de select, para que el usuario pueda encontrar lo que esta buscando sin necesidad de tener que scrollear infinitamente -->
+		<input list="cursos" />
+		<datalist id="cursos">
+			<option value="JavaScript"></option>
+			<option value="CSS3"></option>
+			<option value="HTML5"></option>
+		</datalist>
+	</body>
+</html>

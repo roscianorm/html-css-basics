@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="">
+			<label for="nombre">
+				<span>Nombre</span>
+				<input
+					type="text"
+					name="nombre"
+					id="nombre"
+					placeholder="Tu nombre"
+					autocomplete="name"
+					required
+				/>
+			</label>
+			<label for="correo">
+				<span>Correo</span>
+				<input
+					type="email"
+					name="correo"
+					id="correo"
+					placeholder="Tu correo"
+					autocomplete="email"
+					required
+				/>
+			</label>
+			<label for="pais">
+				<span>Pais</span>
+				<input
+					type="text"
+					name="pais"
+					id="pais"
+					placeholder="Tu pais"
+					autocomplete="country-name"
+					required
+				/>
+			</label>
+			<label for="cp">
+				<span>Codigo Postal (cp)</span>
+				<input
+					type="text"
+					name="cp"
+					id="cp"
+					placeholder="Tu codigo postal"
+					autocomplete="postal-code"
+					required
+				/>
+			</label>
+			<input type="submit" value="Send" />
+		</form>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Video</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<!--
+            etiqueta de video, se utiliza para renderizar los videos. Tiene atributos para activar los controles 'controls' y este es necesario porque si ello no funcionara correctamente el video. Este atributo controls es solo esa palabra no hay un valor que asingnarle
+
+            el atributo de preload="auto" hace que el video pueda empezar a renderizarce una vez se carge la pagina, es una buen practica utilizar esos atributos. Noe s una buena practica activar el atributo de autoplay porque es decision del usuario si el desea reproducir o no ese video
+
+            existe una manera de controlar el tiempo al que queremos que se reproduzca y se deje de reproducir el video nada mas termine de cargar la pagina y es anadiendoles al path del video las siguientes instrucciones #t=segundoAlQueIniciaElVideo,segundoAlQueDejaDeRepodcuriseElVideo
+
+            -->
+				<video
+					src="./videos/WOS-OKUPA.mp4#t=20,60"
+					controls
+					preload="auto"
+				></video>
+
+				<!-- Otra manerade utilizar la etiqueta de video es colocando una etiqueta que source dentro de la etiqueta de video, esto sustituye la atributo de src que esta dentro de la etiqueta de video y nos da la posibilidad de darle varias source al navegador para obtener el video, esto puede implementarse cuadno tenemos un video con multiples formatos -->
+				<video controls preload="auto">
+					<source src="./videos/WOS-OKUPA.mp4#t=20,60" />
+					<source src="./videos/WOS-OKUPA.m4v#t=20,60" />
+					<source src="./videos/WOS-OKUPA.mkv#t=20,60" />
+				</video>
+			</section>
+		</main>
+	</body>
+</html>
